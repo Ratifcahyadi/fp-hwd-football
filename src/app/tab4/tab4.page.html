@@ -13,21 +13,31 @@
         <ion-card>
           <img src="{{ event.strThumb }}" alt="" srcset="">
           <ion-card-header>
-            <ion-card-title>{{ event.strEvent }}</ion-card-title>
+            <ion-card-title color="tertiary "><h1> {{ event.strEvent }}</h1></ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <p>{{ event.dateEvent }} - {{ event.strTime }} BST</p>
-            <p>{{ event.strVenue }}</p>
+            <ion-badge>
+              <p>{{ formatDateToMonth(event.dateEvent) }} - {{ event.strTime }} BST</p>
+            </ion-badge>
+            <p class="text-warning">
+              <ion-icon name="location-outline"></ion-icon>
+              {{ event.strVenue }}</p>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-button (click)="previousRound()">Previous</ion-button>
+<div class="ion-text-center bg-body">
   <ion-label>
-    Week {{ selectedRound }}
+    <ion-button (click)="previousRound()"><ion-icon name="chevron-back-circle-outline"></ion-icon>Previous</ion-button>
+    <ion-button (click)="nextRound()"><ion-icon name="chevron-forward-circle-outline"></ion-icon>Next</ion-button>
   </ion-label>
-  <ion-button (click)="nextRound()">Next</ion-button>
+  <ion-label color="success">
+    <h1>
+      Week {{ selectedRound }}
+    </h1>
+  </ion-label>
+</div>
   <ion-toolbar>
   </ion-toolbar>
 </ion-content>

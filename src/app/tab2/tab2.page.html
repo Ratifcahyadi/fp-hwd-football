@@ -16,16 +16,17 @@
           <ion-card-subtitle>{{ item.strEvent }}</ion-card-subtitle>
         </ion-card-header>
 
-        <ion-card-content>
+        <ion-card-content class="bg-body">
+          <ion-label color="primary">
+            <ion-icon color="success" name="calendar-outline"></ion-icon> {{ formatDateToMonth(item.dateEvent) }}</ion-label>
           <ion-label>
-            <ion-icon name="calendar-outline"></ion-icon> {{ item.dateEvent }}</ion-label>
-          <ion-label>
-            <ion-icon name="location-outline"></ion-icon>
-            {{ item.strVenue }}</ion-label>
+            <ion-badge>
+              <ion-icon name="location-outline"></ion-icon>
+              {{ item.strVenue }}
+            </ion-badge>
+          </ion-label>
         </ion-card-content>
       </ion-card>
     </ion-item>
   </ion-list>
-
-
-</ion-content>
+</ion-content>  

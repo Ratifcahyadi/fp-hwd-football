@@ -13,11 +13,13 @@
         <ion-card>
           <img [src]="item.strEquipment" alt="Gambar Peralatan" />
           <ion-card-header>
-            <ion-card-title>{{ item.strType }}</ion-card-title>
+            <ion-card-title color="tertiary">{{ item.strType }}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <p>{{ item.strSeason }}</p>
-            <p>{{ item.strUsername }}</p>
+            <p class="text-warning">{{ item.strSeason }}</p>
+            <ion-badge>
+              <p>{{ item.strUsername }}</p>
+            </ion-badge>
           </ion-card-content>
         </ion-card>
       </ion-col>

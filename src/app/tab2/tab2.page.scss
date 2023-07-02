@@ -1,0 +1,22 @@
+ion-badge {
+    --background: linear-gradient(45deg, #5457ff 0%, #df6576 100%);
+    --color: white;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --padding-top: 5px;
+    --padding-bottom: 5px;
+}
+
+.text-warning {
+    color: #dfcb65;
+    font-size: 18px;
+}
+
+.bg-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: 3px solid #dfcb65;
+    padding: 10px;
+    // background: #6c21d4;
+}
