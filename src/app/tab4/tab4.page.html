@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <ion-header>
   <ion-toolbar color="primary" sticky>
     <ion-title>Jadwal EPL</ion-title>
+=======
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Jadwal</ion-title>
+>>>>>>> 8e01d59247d189fe8546efbccd40b859610d0ac7
   </ion-toolbar>
 </ion-header>
 
@@ -28,6 +34,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+<<<<<<< HEAD
   <div class="ion-text-center bg-body">
     <ion-label>
       <ion-button (click)="previousRound()"><ion-icon
@@ -39,6 +46,14 @@
         Week {{ selectedRound }}
       </h1>
     </ion-label>
+=======
+  <div class="cont-week">
+    <ion-button (click)="previousRound()">Previous</ion-button>
+    <ion-label>
+      Week {{ selectedRound }}
+    </ion-label>
+    <ion-button (click)="nextRound()">Next</ion-button>
+>>>>>>> 8e01d59247d189fe8546efbccd40b859610d0ac7
   </div>
   <ion-toolbar>
   </ion-toolbar>

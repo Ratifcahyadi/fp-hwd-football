@@ -11,7 +11,9 @@
     <ion-row>
       <ion-col size="6" *ngFor="let item of equipmentData">
         <ion-card>
-          <img [src]="item.strEquipment" alt="Gambar Peralatan" />
+          <div class="gambar-custom">
+            <img [src]="item.strEquipment" alt="Gambar Peralatan" />
+          </div>
           <ion-card-header>
             <ion-card-title color="tertiary">{{ item.strType }}</ion-card-title>
           </ion-card-header>

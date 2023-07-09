@@ -1,6 +1,7 @@
 ion-card-title {
   font-size: 20px;
 }
+<<<<<<< HEAD
 
 ion-badge {
   --background: linear-gradient(45deg, #5457ff 0%, #df6576 100%);
@@ -32,3 +33,17 @@ ion-list {
 .w-custom {
   width: 500px ;
 }
+=======
+.week {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.cont-week {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+>>>>>>> 8e01d59247d189fe8546efbccd40b859610d0ac7
