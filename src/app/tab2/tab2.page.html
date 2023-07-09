@@ -10,12 +10,11 @@
   <ion-list>
     <ion-item *ngFor="let item of mucityData">
       <ion-card>
-        <img [src]="item.strThumb" alt="Team Badge" />
+        <img [src]="item.strThumb" alt="Team Badge" width="500px"/>
         <ion-card-header>
           <ion-card-title> {{ item.strLeague }} - {{ item.strSeason }}</ion-card-title>
           <ion-card-subtitle>{{ item.strEvent }}</ion-card-subtitle>
         </ion-card-header>
-
         <ion-card-content class="bg-body">
           <ion-label color="primary">
             <ion-icon color="success" name="calendar-outline"></ion-icon> {{ formatDateToMonth(item.dateEvent) }}</ion-label>

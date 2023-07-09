@@ -22,5 +22,13 @@ ion-badge {
   align-items: end;
   border-bottom: 3px solid #dfcb65;
   padding: 10px;
-  // background: #6c21d4;
+}
+
+ion-list {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+.w-custom {
+  width: 500px ;
 }

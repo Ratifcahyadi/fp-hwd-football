@@ -1,19 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
+<ion-header>
+  <ion-toolbar color="primary" sticky>
+    <ion-title>Jadwal EPL</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-  </ion-header>
   <ion-grid>
     <ion-row>
       <ion-col size="12" *ngFor="let event of events">
-        <ion-card>
-          <img src="{{ event.strThumb }}" alt="" srcset="">
+        <ion-card class="w-custom">
+          <img src="{{ event.strThumb }}" alt="" srcset="" width="500px">
           <ion-card-header>
-            <ion-card-title color="tertiary "><h1> {{ event.strEvent }}</h1></ion-card-title>
+            <ion-card-title color="tertiary ">
+              <h1> {{ event.strEvent }}</h1>
+            </ion-card-title>
           </ion-card-header>
           <ion-card-content>
             <ion-badge>
@@ -21,23 +21,25 @@
             </ion-badge>
             <p class="text-warning">
               <ion-icon name="location-outline"></ion-icon>
-              {{ event.strVenue }}</p>
+              {{ event.strVenue }}
+            </p>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
-<div class="ion-text-center bg-body">
-  <ion-label>
-    <ion-button (click)="previousRound()"><ion-icon name="chevron-back-circle-outline"></ion-icon>Previous</ion-button>
-    <ion-button (click)="nextRound()"><ion-icon name="chevron-forward-circle-outline"></ion-icon>Next</ion-button>
-  </ion-label>
-  <ion-label color="success">
-    <h1>
-      Week {{ selectedRound }}
-    </h1>
-  </ion-label>
-</div>
+  <div class="ion-text-center bg-body">
+    <ion-label>
+      <ion-button (click)="previousRound()"><ion-icon
+          name="chevron-back-circle-outline"></ion-icon>Previous</ion-button>
+      <ion-button (click)="nextRound()"><ion-icon name="chevron-forward-circle-outline"></ion-icon>Next</ion-button>
+    </ion-label>
+    <ion-label color="success">
+      <h1>
+        Week {{ selectedRound }}
+      </h1>
+    </ion-label>
+  </div>
   <ion-toolbar>
   </ion-toolbar>
 </ion-content>
